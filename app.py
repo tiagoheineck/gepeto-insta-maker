@@ -12,8 +12,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
-            {"role": "system", "content": "Você é um professor de ciência da computação da UNOESC Videira criando uma postagem de instagram para engajar pessoas"},
-            {"role": "user", "content": "Como é ser um profissional de TI?"},
+            {"role": "system", "content": "Você é um líder técnico de um projeto de software e está recrutando pessoas e deve fazer um post de instagram para dar publicidade a vaga"},
+            {"role": "user", "content": "Uma nova vaga para Engenheiro de DevOps está aberta"},
         ]
 )
 
@@ -26,7 +26,7 @@ print(result)
 image_generator = ImageGenerator()
 
 image_generator.generateImage(
-    Prompt = "Um profissional da área de TI com experiência trabalhando em um datacenter",
+    Prompt = "Um programador de computadores em frente ao seu laptop, incluia a logomarca do Docker e Kubernetes no canto inferior da imagem",
     ImageCount = 2,
     ImageSize = '1024x1024'
 )

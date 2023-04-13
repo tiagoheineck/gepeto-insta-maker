@@ -4,6 +4,7 @@ import openai
 from dotenv import load_dotenv
 from PIL import Image
 
+# Fonte https://stormotion.io/blog/chatgpt-integration/#chatgpt-pros-and-cons
 class ImageGenerator:
     def __init__(self) -> str:
         self.image_url: str
