@@ -1,5 +1,6 @@
 import requests
 
+# Créditos para https://medium.com/@ritikkhndelwal/making-a-post-using-python-and-instagram-graph-api-2c126ff27679
 class InstaPostManager():
     graph_url = 'https://graph.facebook.com/v16.0/'
 
